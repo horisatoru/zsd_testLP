@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LP sample Web Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1 class="site_logo"><img src="./img/T_zenshi_logo.png" alt="BEST! 株式会社全進堂"></h1>
+
+        <button class="menu-trigger" id="js-hamburger" aria-controls="js-nav" aria-expanded="false"
+            aria-label="メニューを開く">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="app-nav" id="js-nav" aria-label="メインナビゲーション">
+            <ul class="app-nav-list">
+                <li class="app-nav-item"><a href="#">menu0</a></li>
+                <li class="app-nav-item"><a href="#">menu1</a></li>
+                <li class="app-nav-item"><a href="#">menu2</a></li>
+                <li class="app-nav-item"><a href="#">menu3</a></li>
+            </ul>
+        </nav>
+
+        <script>
+            // JavaScriptでボタンのクリックイベントを制御
+            const hamburger = document.getElementById('js-hamburger');
+            const nav = document.getElementById('js-nav');
+
+            hamburger.addEventListener('click', () => {
+                // 現在のメニューの開閉状態（true または false）を取得
+                const isOpen = hamburger.getAttribute('aria-expanded') === 'true';
+
+                // 状態を反転させる
+                hamburger.setAttribute('aria-expanded', !isOpen);
+                nav.classList.toggle('is-active');
+
+                // ボタンの音声読み上げ用ラベルも切り替える
+                if (!isOpen) {
+                    hamburger.setAttribute('aria-label', 'メニューを閉じる');
+                } else {
+                    hamburger.setAttribute('aria-label', 'メニューを開く');
+                }
+            });
+        </script>
+
+
+
+
+    </header>
+
+
+    <main>
+        <style>
+
+        </style>
+        <section class="main_view">
+            <ul class="main_view_list">
+                <li class="main_view_list_item"><img src="./img/01_top_img.png" alt="七五三写真"></li>
+                <li class="main_view_list_item txt-rl pc">もっと価値ある作品に</li>
+                <li class="main_view_list_item"><img src="./img/02_top_img.png" alt="ブライダル"></li>
+                <li class="main_view_list_item txt-rl pc">撮った写真を</li>
+                <li class="main_view_list_item"><img src="./img/03_top_img.png" alt="家族記念写"></li>
+            </ul>
+            <p class="view_message sp">撮った写真を<br><span>もっと価値ある作品に</span></p>
+            <div class="main_view_txtwrap">
+                <h2 class="main_view_title">フォトアルバム・写真台紙の<br class="sp">専門メーカーが、<br class="pc">あなたのビジネスを<br
+                        class="sp">直接サポートします。</h2>
+                <p class="main_view_message">ブライダル・七五三・家族記念撮影を手掛ける<br
+                        class="sp">フリーランスカメラマンのために。<br>小ロット・別注対応・担当者による訪問サポー<br class="sp">トで、納品価格を一段上へ。</p>
+                <div class="sales_mv">
+                    <p class="sales_mv-btn1">サンプルを無料で借りてみる</p>
+                    <p class="sales_mv-btn2">まずは相談する</p>
+                    <ul class="sales_mv_list">
+                        <li class="sales_mv_list_item">サンプルの貸し出し無料</li>
+                        <li class="sales_mv_list_item">テストプリント無料 </li>
+                        <li class="sales_mv_list_item">営業電話一切なし</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="concerns">
+            <img class="concerns_img" src="./img/01_PC_img.png" alt="全進堂はフリーカメラマンの様々なお悩みに、直接お応えします">
+            <h2 class="concerns_title">
+                こんなお悩み、<br><span>ありませんか？</span>
+            </h2>
+            <!-- <ul class="concerns_list">
+                <li class="concerns_list-item">
+                    <img src="" alt="アルバムは作れますか？">
+                </li>
+                <li class="concerns_list-item">
+                    <img src="" alt="担当者に相談できる">
+                </li>
+                <li class="concerns_list-item">
+                    <img src="" alt="単価を上げたい">
+                </li>
+                <li class="concerns_list-item">
+                    <img src="" alt="品質の良いアルバム・台紙の仕入先">
+                </li>
+                <li class="concerns_list-item">
+                    <img src="" alt="１件分などの小ロット">
+                </li>
+            </ul> -->
+            <!-- <p class="concerns_message">
+                全進堂は、<br><span class="span_blue">フリーカメラマン</span>の<br>そのお悩みに、<span class="under_line">直接お答えします。</span>
+            </p> -->
+        </section>
+
+        <section class="company_infomation">
+            <div class="message_box">
+                <p class="company_infomation_img"><img src="./img/fukuoka.jpg" alt="創業100年を迎えた写真業界一筋の専門メーカーです"
+                        width="500"></p>
+                <h2 class="company_infomation_title"><span>フォトアルバム・写真台紙の<br>専門メーカー</span><br>全進堂</h2>
+                <p class="company_infomation_message">
+                    創業100年を迎えた写真業界一筋の専門メーカーです。国内自社工場での一貫生産にこだわり、<br
+                        class="sp">全国3,000社以上の写真館・スタジオ・フリーランスカメラマンから支持をいただいています。
+                </p><br style="clear: both;">
+                <ul class="company_infomation_list">
+                    <li class="company_infomation_item">創業100年<br><small>の実績</small></li>
+                    <li class="company_infomation_item">3,000社<br>以上の<small>お取引先</small>
+                    </li>
+                    <li class="company_infomation_item">国内＋海外<br><small>自社工場</small></li>
+                    <li class="company_infomation_item">全国６拠点<br><small>営業所</small></li>
+                    <li class="company_infomation_item">１冊〜<br><small>小ロット対応</small></li>
+                </ul>
+            </div>
+
+
+            <div class="company_infomation_image">
+                <p class="salesoffice">営業所：東京・名古屋・大阪・富山・広島・福岡</p>
+                <p class="factory">工場：福岡・ベトナム</p>
+                <p class="ja_image"><img src="./img/map_pc.png" alt="マップ"></p>
+                <!-- 
+                <ul class="company_infomation_image_list">
+                    <li class="company_infomation_image_list_item"><img src="" alt="ベトナム工場"></li>
+                    <li class="company_infomation_image_list_item"><img src="" alt="福岡工場"></li>
+                </ul> -->
+                <ul class="company_infomation_staff">
+                    <li class="company_infomation_staff_item"><img src="" alt="staff1"></li>
+                    <li class="company_infomation_staff_item"><img src="" alt="staff2"></li>
+                    <li class="company_infomation_staff_item"><img src="" alt="staff3"></li>
+                    <li class="company_infomation_staff_item"><img src="" alt="staff4"></li>
+                </ul>
+            </div>
+            <p class="support">「他社でできない」を受けてきた<br class="sp">実績と規範感<br>全国6拠点の担当者が<br class="sp">直接訪問してサポートします</p>
+        </section>
+
+        <section class="reasons">
+            <h2 class="reasons_title">
+                フリーランスカメラマン<br class="sp">に選ばれる<br><span>5</span>つの理由
+            </h2>
+            <ul class="reasons_list">
+                <li class="reasons_list_item">
+                    <h3><span>01</span>「相談できる」<br>唯一の仕入先</h3>
+                    <p class="reasons_list_item-txt">
+                        大手はWEB注文のみ、写真館向け大ロットが中心――フリーランス個人の細かい要望に答えてくれる仕入れ先はほぼ存在しません。全進堂は全国6拠点の担当者が直接訪問し、商品選びから納品まで一緒に考えます。困ったときに電話一本で相談できる、<span>あなた専任のパートナー</span>がいる安心感。
+                    </p>
+                </li>
+                <li class="reasons_list_item">
+                    <h3><span>02</span>冊から在庫リスク<br>ゼロで始められる</h3>
+                    <p class="reasons_list_item-txt">
+                        「1件のお客様のために1点だけ」――その注文に対応できる業者は、実はほとんどいません。全進堂なら必要な数だけ発注OK。大量在庫を抱えるリスクなく、<span>試しながら少しずつ取り扱いを広げられます。</span>副業・駆け出しのカメラマンにも始めやすい体制です。
+                    </p>
+                </li>
+                <li class="reasons_list_item">
+                    <h3><span>03</span>実物を手に取って<br>から決められる、<br>無料お試し</h3>
+                    <p class="reasons_list_item-txt">
+                        競合3社にはない全進堂だけの入り口――<span>現物サンプル無料貸し出し＋テストプリント無料。</span>発注前に実際の色・質感・仕上がりを自分の目で確かめてから判断できます。「失敗したくない」という心理的ハードルを、リスクゼロで乗り越えられます。
+                    </p>
+                </li>
+                <li class="reasons_list_item">
+                    <h3><span>04</span>「データ納品だけ」を<br>卒業して、<br>単価を上げる</h3>
+                    <p class="reasons_list_item-txt">
+                        アルバム・台紙・セットBOXをラインナップに加えれば、<span>お客様への提案の幅が広がり、客単価アップに直結</span>します。「データだけ渡す」から「形に残る作品を届ける」へ――カメラマンとしての価値を一段上げる商材を、全進堂がご提案します。
+                    </p>
+                </li>
+                <li class="reasons_list_item">
+                    <h3><span>05</span>別注・カスタムも<br>他社が断った要望でも</h3>
+                    <p class="reasons_list_item-txt">
+                        サイズ・素材・形・ページ数まで、カタログ外のご要望にも柔軟に対応。国内自社工場（福岡）での一貫生産だからこそ、<span>大手には断られた要望も全進堂なら実現できます。</span>ドリームラボ5000による色表現で、撮影した写真の美しさをそのまま商品に。品質のブレなく、大切な記念日の納期もお約束します。
+                    </p>
+                </li>
+
+                <li class="reasons_list_item">
+                    <p class="reasons_list_item_option">オプションを<br>比較して<br>みよう<br><span>↓</span>
+                    </p>
+                </li>
+            </ul>
+            <div class="reasons_table pc">
+                <img src="./img/h_pc.png" alt="">
+            </div>
+            <div class="reasons_table sp">
+                <img src="./img/h_sp.png" alt="">
+            </div>
+
+
+        </section>
+
+        <section class="lineup">
+            <h2 class="lineup_title">撮影スタイルに合わせて<br class="sp">選べる<br class="pc"><span>豊富な<br class="sp">商品ラインナップ</span>
+            </h2>
+            <p class="lineup_title_add">単価アップが<br>狙える！</p>
+            <ul class="lineup_list">
+                <li class="lineup_list_item">
+                    <h3 class="lineup_list_item_title">
+                        <img src="./img/lineup0.png" alt="デザインアルバム">
+                    </h3>
+                    <p class="lineup_list_item_txt">
+                        ブライダル・記念撮影の<br>「最高の一冊」に。<br>高級感と<br>耐久性を両立。
+                    </p>
+                </li>
+                <li class="lineup_list_item">
+                    <h3 class="lineup_list_item_title">
+                        <img src="./img/lineup1.png" alt="写真台紙">
+                    </h3>
+                    <p class="lineup_list_item_txt">
+                        七五三・成人式の定番商品。<br>ジャンル・サイズ・素材も<br>豊富に揃えています。
+                    </p>
+                </li>
+                <li class="lineup_list_item">
+                    <h3 class="lineup_list_item_title">
+                        <img src="./img/lineup2.png" alt="セットBOX">
+                    </h3>
+                    <p class="lineup_list_item_txt">
+                        アルバム+フレーム+USBなど<br>組み合わせ自由。<br>客単価アップに直結。
+                    </p>
+                </li>
+                <li class="lineup_list_item">
+                    <h3 class="lineup_list_item_title">
+                        <img src="./img/lineup3.png" alt="別注オーダー">
+                    </h3>
+                    <p class="lineup_list_item_txt">
+                        カタログ外の<br>サイズ・素材・形にも対応。<br>他社が断った<br>要望もご相談を。
+                    </p>
+                </li>
+            </ul>
+            <p class="catalog_download"><a href="">総合カタログを無料ダウンロード<span>→</span></a></p>
+        </section>
+
+        <section class="start_trading">
+            <h2 class="start_trading_title">
+                はじめての方も安心<br>かんたん4ステップ<br class="sp">でお取引スタート
+            </h2>
+            <p class="start_trading_txt">ご利用の流れ</p>
+            <ul class="start_trading_list">
+                <li class="start_trading_list_item">
+                    <h3>お問い合わせ</h3>
+                    <p>まずはメールか電話で。<br>担当者がすぐに<br class="pc">ご連絡します</p>
+                </li>
+                <li class="start_trading_list_item">
+                    <h3>サンプル貸し出し</h3>
+                    <p>現物サンプル・<br class="pc">テストプリントを<br class="pc">実際に<br class="sp">お手元で<br class="pc">ご確認ください。<br
+                            class="pc">（無料・返却あり）
+                    </p>
+                </li>
+                <li class="start_trading_list_item">
+                    <h3>商談・ご提案</h3>
+                    <p>ご要望をヒヤリングし、<br>最適な商品・価格を<br class="pc">ご提案します。</p>
+                </li>
+                <li class="start_trading_list_item">
+                    <h3>お取引開始</h3>
+                    <p>必要な数から、<br class="pc">必要なタイミングで<br>ご注文いただけます。
+                    </p>
+                </li>
+            </ul>
+            <p class="start_trading_request">
+                <a href="">サンプルだけのご依頼も大歓迎<br>まずは気軽にご連絡ください<br><span>→</span></a>
+            </p>
+        </section>
+
+        <section class="trust">
+            <h2 class="trust_title">全国のカメラマンから<br><span>信頼をいただいています</span></h2>
+            <p class="trust_title_add">どんなことが<br>役に立っている？</p>
+            <ul class="trust_list">
+                <li class="trust_list_item">
+                    <h3>東京・ブライダルカメラマン</h3>
+                    <p>
+                        「<span>クオリティが高く</span>、お客様から<br>『こんなアルバムは見たことない』と喜ばれました」
+                    </p>
+                </li>
+                <li class="trust_list_item">
+                    <h3>大阪・七五三専門カメラマン</h3>
+                    <p>
+                        「<span>小ロットから対応してもらえる</span>ので、<br>試しやすかったです。<br>担当さんが親切で相談しやすい」
+                    </p>
+                </li>
+                <li class="trust_list_item">
+                    <h3>名古屋・家族記念カメラマン</h3>
+                    <p>
+                        「別注で作ったオリジナルBOXが大好評。<br>他のカメラマンと<span>差別化できました</span>」
+                    </p>
+                </li>
+                <li class="trust_list_item">
+                    <h3>福岡・成人式カメラマン</h3>
+                    <p>
+                        「データ納品だけだった自分が、アルバムセットの提案が<br>できるようになり<span>客単価が上がりました</span>。」
+                    </p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="faq">
+            <h2 class="faq_title">よくあるご質問<span>（FAQ）</span></h2>
+            <dl class="faq_list">
+                <dt class="faq_list_item-t">
+                    <span>Q.</span> 個人のフリーランスカメラマンでも取引できますか？
+                </dt>
+                <dd class="faq_list_item-d">
+                    <span>A.</span> はい、フリーランスの方も大歓迎です。法人・個人問わずお気軽にご相談ください。
+                </dd>
+
+                <dt class="faq_list_item-t">
+                    <span>Q.</span> サンプルは無料で借りられますか？
+                </dt>
+                <dd class="faq_list_item-d">
+                    <span>A.</span> はい、現物サンプルの無料貸し出しおよびテストプリントを無料で承っております。実際に手に取ってご確認いただけます。
+                </dd>
+
+                <dt class="faq_list_item-t">
+                    <span>Q.</span> 1冊・少量からの注文は可能ですか？
+                </dt>
+                <dd class="faq_list_item-d">
+                    <span>A.</span> はい、必要部数の1冊からご注文いただけます。在庫を抱えるリスクなくお試しいただけます。
+                </dd>
+
+                <dt class="faq_list_item-t">
+                    <span>Q.</span> サイズや仕様のカスタマイズはできますか？
+                </dt>
+                <dd class="faq_list_item-d">
+                    <span>A.</span> はい、サイズ・素材・形・ページ数など別注対応が可能です。まずはお問い合わせください。
+                </dd>
+
+                <dt class="faq_list_item-t">
+                    <span>Q.</span> 納期はどれくらいかかりますか？
+                </dt>
+                <dd class="faq_list_item-d">
+                    <span>A.</span> 商品の制作のみであれば2〜3週間が目安です。詳細はご相談の上ご案内いたします。
+                </dd>
+            </dl>
+        </section>
+
+        <section class="request">
+            <h2 class="request_title">
+                まず、サンプルを<br>手に取ってみてください
+            </h2>
+            <div class="request_box">
+                <ul class="request_box_list">
+                    <li class="request_box_list_item">サンプル貸し出し無料</li>
+                    <li class="request_box_list_item">テストプリント無料</li>
+                    <li class="request_box_list_item">営業電話一切なし</li>
+                </ul>
+                <p class="request_box_message">まずは実物を手に取って、品質をご自身の目でご確認ください。<br>ご納得いただいた場合のみ、取引をご検討ください。<br
+                        class="sp">それだけで十分です。</p>
+                <p class="request_box_btn">サンプル<br>貸し出しを<br>申し込む<br><span>→</span></p>
+
+                <p class="request_box_txt">または、お電話でのご相談はこちら</p>
+                <p class="request_box_tel"><a href="tel:0522518731">052-251-8731</a></p>
+                <p class="request_box_txt">受付時間：平日 9:00 〜 17:00</p>
+                <p class="request_box_mail"><a href="mailto:toiawase@zenshindo.net">toiawase@zenshindo.net</a></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <figure class="fotter_fig">
+            <img class="fotter_fig-img" src="./img/F_zenshi_logo.png" alt="BEST! 株式会社全進堂">
+        </figure>
+    </footer>
+
+</body>
+
+</html>
