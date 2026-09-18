@@ -1217,4 +1217,29 @@ footer
     .reasons_list_item {
         width: 100%;
     }
+
+    .company_infomation_list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        position: initial;
+        justify-content: center;
+    }
+
+    .company_infomation .message_box {
+        padding: 0 0 3rem 0;
+        margin: 0 auto;
+        border-left: none;
+        border-bottom: none;
+        position: initial;
+        width: 100%;
+    }
+
+    .company_infomation_img {
+        float: none;
+    }
+
+    h2.company_infomation_title {
+        position: initial;
+    }
 }
