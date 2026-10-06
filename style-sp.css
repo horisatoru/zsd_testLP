@@ -37,7 +37,7 @@ body {
     font-weight: normal;
     font-style: normal;
     color: var(--txt_main);
-    border: 1px dashed red;
+    /*border: 1px dashed red;*/
 }
 
 ul {
