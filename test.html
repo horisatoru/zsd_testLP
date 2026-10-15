@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>2段レイアウト（写真版）</title>
+    </head>
+    <body>
+        <figure class="testimonial-box">
+            <figcaption class="title">名古屋・家族記念カメラマン</figcaption>
+            <blockquote class="content">
+                <p>
+                    「別注で作ったオリジナルBOXが大好評。<br>
+                    他のカメラマンと<span class="highlight">差別化できました</span>」
+                </p>
+            </blockquote>
+        </figure>
+
+
+        <style>
+            /* ボックス全体の定義 */
+            .testimonial-box {
+                position: relative;
+                max-width: 600px;
+                margin: 60px auto;
+                padding: 50px 30px 30px 30px;
+                background-color: #ffffff;
+                border: 2px solid #4a74cd;
+                border-radius: 8px;
+                box-sizing: border-box;
+
+                /* 全体を時計回りに2度傾ける */
+                transform: rotate(2deg);
+                transform-origin: center;
+                backface-visibility: hidden;
+
+                /* ★【重要】transformによる重なりバグを防ぎ、z-index: -1 を白背景の後ろに正しく隠す */
+                isolation: isolate;
+            }
+
+            /* 右下・左下の斜線模様の影（擬似要素） */
+            .testimonial-box::before {
+                content: "";
+                position: absolute;
+                top: 12px;
+                left: 12px;
+                right: -12px;
+                bottom: -12px;
+
+                /* ★ 白背景（親要素）の背面に配置 */
+                z-index: -1;
+                border-radius: 8px;
+
+                /* 斜線パターンの背景 */
+                background: repeating-linear-gradient(-45deg,
+                        #a2c2e8,
+                        #a2c2e8 2px,
+                        transparent 2px,
+                        transparent 7px);
+            }
+
+            /* 左上の見出しリボン */
+            .title {
+                position: absolute;
+                top: 15px;
+                left: -15px;
+                margin: 0;
+                padding: 10px 30px 10px 20px;
+                font-size: 18px;
+                font-weight: bold;
+                color: #ffffff;
+                background-color: #5b79ce;
+                border-radius: 0 25px 25px 0;
+                box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+                letter-spacing: 0.05em;
+            }
+
+            /* 本文エリア */
+            .content {
+                margin: 0;
+            }
+
+            .content p {
+                margin: 0;
+                font-size: 16px;
+                line-height: 1.8;
+                color: #333333;
+                font-weight: 500;
+            }
+
+            /* オレンジの強調文字 */
+            .highlight {
+                color: #f39800;
+                font-weight: bold;
+            }
+        </style>
+
+    </body>
+    </html>
+
+</body>
+</html>

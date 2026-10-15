@@ -1,0 +1,63 @@
+/* = = = = = = = = = =
+trust
+= = = = = = = = = = */
+.trust {
+    padding: 0 2rem 3rem;
+    margin-bottom: 5rem;
+    background-color: var(--sec_bgc);
+    position: relative;
+    z-index: 0;
+}
+
+.trust_list {
+    display: flex;
+    gap: 2em 4em;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.trust_list_item {
+    position: relative;
+    border: 1px solid var(--txt_process);
+    border-radius: .5rem;
+    width: 100%;
+    padding: 1em;
+    background-color: white;
+    /* isolation: isolate; */
+}
+
+/* 背景の斜線（ストライプの影） */
+.trust_list_item::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 10px;
+    left: 10px;
+    right: -10px;
+    bottom: -10px;
+    /* linear-gradientで斜線ストライプを作成 */
+    /* #b9d1ea 25%,
+            transparent 25%,
+            transparent 50%,
+            #b9d1ea 50%,
+            #b9d1ea 65%,
+            transparent 65%,
+            transparent); */
+    background: linear-gradient(135deg,
+            #b9d1ea 25%,
+            transparent 25%,
+            transparent 50%,
+            #b9d1ea 50%,
+            #b9d1ea 75%,
+            transparent 75%,
+            transparent);
+    background-size: 10px 10px;
+    /* 斜線の細さ・間隔 */
+}
+
+h2.trust_title {
+    font-size: 3.2rem;
+    width: fit-content;
+    margin: 0 auto;
+}
