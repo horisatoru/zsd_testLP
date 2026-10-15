@@ -154,7 +154,6 @@ header {
 
 .menu-trigger[aria-expanded="true"] span:nth-child(3) {
     transform: translateX(1px) translateY(-8.5px) rotate(-45deg);
-    /* width: 50%; */
 
 }
 
@@ -163,11 +162,10 @@ header {
 3. ナビゲーションメニュー（モバイル用：初期は非表示）
 ========================================== */
 .app-nav {
-    /* display: none; */
     opacity: 0;
     position: fixed;
     top: -20rem;
-    /* right: 6em; */
+    left: 0;
     width: 100%;
     background-color: #fffc;
     padding: 20px;
