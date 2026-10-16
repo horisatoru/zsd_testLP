@@ -23,12 +23,12 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
     font-size: 1.6rem;
     width: 100%;
-    /* max-width: 1200px; */
     margin: 0 auto;
     line-height: 1.6;
     letter-spacing: 0.125em;
@@ -37,7 +37,6 @@ body {
     font-weight: normal;
     font-style: normal;
     color: var(--txt_main);
-    /* border: 1px dashed red; */
 }
 
 ul {
@@ -64,8 +63,6 @@ h2 {
     font-size: 3.6rem;
     font-weight: bold;
     color: var(--txt_process);
-    /* letter-spacing: 2px;
-    line-height: 1.2; */
 }
 
 p {
@@ -110,7 +107,6 @@ header {
     right: 2rem;
     z-index: 100;
     filter: drop-shadow(1px 1px 3px #3336);
-
 }
 
 /* 三本線の共通スタイル */
@@ -122,7 +118,6 @@ header {
     background-color: var(--txt_process);
     border-radius: 2px;
     transition: transform 0.3s ease, opacity 0.3s ease;
-
 }
 
 /* 三本線の位置調整 */
@@ -154,7 +149,6 @@ header {
 
 .menu-trigger[aria-expanded="true"] span:nth-child(3) {
     transform: translateX(1px) translateY(-8.5px) rotate(-45deg);
-
 }
 
 
@@ -162,10 +156,11 @@ header {
 3. ナビゲーションメニュー（モバイル用：初期は非表示）
 ========================================== */
 .app-nav {
+    /* display: none; */
     opacity: 0;
     position: fixed;
     top: -20rem;
-    left: 0;
+    /* right: 6em; */
     width: 100%;
     background-color: #fffc;
     padding: 20px;
@@ -189,8 +184,8 @@ header {
 
 
 /* = = = = = = = = = =
-mainview
-= = = = = = = = = = */
+    mainview
+    = = = = = = = = = = */
 .main_view {
     margin-bottom: 3rem;
 }
@@ -379,13 +374,6 @@ h2.concerns_title {
     /* color: red; */
 }
 
-
-/* 
-.concerns_list {
-    display: grid;
-    grid-template-columns: 1fr;
-} */
-
 /* = = = = = = = = = =
 company_infomation
 = = = = = = = = = = */
@@ -398,52 +386,22 @@ h2.company_infomation_title {
     font-size: clamp(4.6rem, 4.6vw, 3.75rem);
     text-align: center;
     line-height: 1.4;
-    /* font-size: 6.8rem;
-    letter-spacing: 12px;
-    margin-left: 15%;
-    line-height: 1.4;
-    width: fit-content;
-    position: absolute;
-    left: 0;
-    top: -15rem; */
 }
 
 h2.company_infomation_title span {
     font-size: clamp(2.4rem, 4.6vw, 3.75rem);
     display: inline-block;
     line-height: 1.8;
-    /* margin-left: -22.5%;
-    font-size: 70%;
-    font-weight: 600;
-    letter-spacing: 5px;
-    display: inline-block;
-    line-height: 1.4;
-    text-align: initial; */
 }
 
 .company_infomation .message_box {
     padding: 0 2em;
-    /* padding: 0 0 11rem 6rem;
-    margin: 12rem 13rem 20rem;
-    border-left: 3px solid var(--txt_sub);
-    border-bottom: 3px solid var(--txt_sub);
-    position: relative;
-    width: 86%; */
 }
 
-/* .company_infomation_img {
-    float: right;
-} */
-
-/* .company_infomation_list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-} */
 
 .company_infomation_item {
-    width: 15rem;
-    height: 15rem;
+    width: 14.5rem;
+    height: 14.5rem;
     background: linear-gradient(to right, #f7c317, #f5a32d);
     border-radius: 50%;
     text-align: center;
@@ -459,22 +417,12 @@ h2.company_infomation_title span {
     align-content: center;
 }
 
-/* .company_infomation_item:first-child {
-    letter-spacing: 0;
-} */
-
-/* .company_infomation_item span {
-    font-size: 2rem;
-}*/
 
 .company_infomation_list {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
     justify-content: center;
-    /* position: absolute;
-    bottom: -90px;
-    left: -50px; */
 }
 
 p.ja_image-factory.sp {
@@ -484,10 +432,6 @@ p.ja_image-factory.sp {
 .company_infomation_img img {
     width: 100%;
     object-fit: cover;
-    /* width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: bottom; */
 }
 
 .company_infomation_image {
@@ -550,11 +494,6 @@ p.ja_image-factory.sp {
 
 .company_infomation_message {
     font-size: 1.8rem;
-    /* width: calc(50% - 10rem);
-    position: absolute;
-    top: 16rem;
-    
-    letter-spacing: 3px; */
 }
 
 .company_infomation_staff_wrap {
@@ -609,10 +548,6 @@ p.ja_image-factory.sp {
     /* margin: 0 0 2em 0; */
     color: var(--txt_process);
 }
-
-/* .company_infomation_staff::after {
-    content: "[ 担当営業スタッフ写真 ] ";
-} */
 
 .company_infomation_staff_item {
     display: block;
@@ -689,12 +624,6 @@ h2.reasons_title span::first-letter {
     position: relative;
 }
 
-/* .reasons_list_item_option {
-    background-color: var(--txt_sub);
-    border-radius: 50%;
-    text-align: center;
-    color: white;
-} */
 
 .reasons_list_item h3 {
     font-size: 2rem;
@@ -758,12 +687,9 @@ h2.reasons_title span::first-letter {
 
 .reasons_table img {
     margin: 2em auto;
-
+    width: 100%;
 }
 
-/* .reasons_table.pc {
-    text-align: center;
-} */
 .reasons_table.sp {
     text-align: center;
     background-color: var(--sec_bgc);
@@ -785,9 +711,6 @@ h2.lineup_title {
     margin: 0 auto;
 }
 
-/* h2.lineup_title span {
-    margin-left: 5em;
-} */
 
 .lineup_list {
     display: flex;
@@ -1037,7 +960,7 @@ li.start_trading_list_item:nth-child(2) h3::after {
     padding: .75em;
     line-height: 1.5;
     text-align: center;
-    font-size: 2.2rem;
+    font-size: 5vw;
     font-weight: bold;
     background: linear-gradient(to right, #6275B4, #6B98D6, #6275B4);
     color: white;
@@ -1084,12 +1007,7 @@ trust
     content: "";
     position: relative;
     top: -10px;
-
-    /* z-index: -1;
-            top: 10px;
-            left: 10px;
-            right: -10px;
-            bottom: -10px; */
+    left: 10px;
     background: linear-gradient(135deg,
             #b9d1ea 25%,
             transparent 25%,
@@ -1105,20 +1023,18 @@ trust
 
 .trust_list_item-wrap {
     position: absolute;
-    top: -10px;
-    right: 10px;
+    top: -5px;
+    right: 5px;
     border: 1px solid var(--txt_process);
-    /* border: 1px solid red; */
     border-radius: .5rem;
     width: 100%;
     height: 160px;
-    padding: 1em;
+    padding: 1em .25em;
     background-color: white;
-    /* isolation: isolate; */
 }
 
 h2.trust_title {
-    font-size: 3.2rem;
+    font-size: 3rem;
     width: fit-content;
     margin: 0 auto;
 }
@@ -1134,9 +1050,6 @@ h2.trust_title {
     transform: rotateZ(2deg);
 }
 
-/* h2.trust_title span {
-    margin-left: 3em;
-} */
 .trust_title_add {
     margin: .5rem auto 1rem;
     font-size: 2.4rem;
@@ -1145,13 +1058,9 @@ h2.trust_title {
     transform: rotateZ(2deg);
 }
 
-/* .trust_list_item:nth-child(4) {
-    transform: rotate(3deg);
-} */
-
 .trust_list_item h3 {
-    text-indent: 1em;
-    margin-left: -1em;
+    text-indent: .5em;
+    margin-left: -.75em;
     width: 17em;
     font-size: 2rem;
     color: white;
@@ -1332,7 +1241,7 @@ p.request_box_txt {
     display: block;
     background: linear-gradient(to right, #6275B4, #73a4e8, #6275B4);
     border-radius: 1.5em .35em .35em 1.5em;
-    font-size: 3.2rem;
+    font-size: 3rem;
     font-weight: bold;
     color: white;
     width: fit-content;
@@ -1397,8 +1306,8 @@ footer {
 }
 
 
-
 @media screen and (min-width: 768px) {
+    /* @media screen and (min-width: 980px) { */
 
     /* visible or invisible
     ****************** */
@@ -1545,10 +1454,6 @@ footer {
 
     .company_infomation_staff_lower::after {
         background: none;
-    }
-
-    .company_infomation_staff_upper::before {
-        /* border-radius: calc(55px + 2rem) 0 0 calc(55px + 2rem); */
     }
 
     .company_infomation p.support {
@@ -1836,83 +1741,3 @@ footer {
         font-size: 1.9rem;
     }
 }
-
-/* 
-@media screen and (min-width: 1024px) {}
-
-@media screen and (max-width: 1100px) {
-    .reasons_list {
-        justify-content: center;
-    }
-
-    .reasons_list_item {
-        width: 45%;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .lineup_list_item::after {
-        content: "";
-        display: block;
-        border-radius: 50%;
-        background-color: #F9EEBE;
-        position: absolute;
-        top: 250px;
-        left: 0;
-        z-index: 5;
-        height: auto;
-        width: 100%;
-        aspect-ratio: 1 / 1;
-    }
-
-    .lineup_list_item_txt {
-        padding-top: 185px;
-    }
-
-    .reasons_table.sp {
-        text-align: center;
-    }
-
-    .lineup_list_item {
-        width: 70%;
-        height: 65rem;
-    }
-
-    li.start_trading_list_item {
-        width: 100%;
-        height: 50vw;
-    }
-
-    .trust_list_item {
-        width: 90%;
-    }
-
-    .reasons_list_item {
-        width: 100%;
-    }
-
-    .company_infomation_list {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 2rem;
-        position: initial;
-        justify-content: center;
-    }
-
-    .company_infomation .message_box {
-        padding: 0 0 3rem 0;
-        margin: 0 auto;
-        border-left: none;
-        border-bottom: none;
-        position: initial;
-        width: 100%;
-    }
-
-    .company_infomation_img {
-        float: none;
-    }
-
-    h2.company_infomation_title {
-        position: initial;
-    }
-} */
