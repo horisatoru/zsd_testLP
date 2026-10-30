@@ -51,7 +51,7 @@ a {
 
 a:hover {
     opacity: .8;
-    /* text-decoration: underline; */
+    text-decoration: underline;
 }
 
 h1,
@@ -315,6 +315,18 @@ header {
     bottom: -3px;
 }
 
+/* company_infomation */
+.company_infomation {
+    background-color: var(--sec_bgc);
+    margin-bottom: 6rem;
+
+}
+
+/* reasons */
+section.reasons {
+    margin-bottom: 6rem;
+}
+
 /* concerns */
 .concerns {
     position: relative;
@@ -334,7 +346,7 @@ h2.concerns_title {
 /* lineup */
 section.lineup {
     width: 100%;
-    margin: 0 auto;
+    margin: 0 auto 6rem;
 }
 
 .catalog_download a {
@@ -385,7 +397,7 @@ section.lineup {
 /* SVG sections */
 .start_trading {
     padding: 0 2rem;
-    background-color: var(--sec_bgc);
+    margin-bottom: 6rem;
 }
 
 .trust {
@@ -398,12 +410,17 @@ section.lineup {
 /* FAQ */
 .faq {
     padding: 0 2rem 4rem;
+    margin-bottom: 6rem;
 }
 
 h2.faq_title {
     font-size: 2.6rem;
     width: fit-content;
     margin: 0 auto;
+    padding: 1em 0;
+    background-image: url(./img/zebra_bgp.png);
+    background-position: 3.5em center;
+    background-repeat: no-repeat;
 }
 
 h2.faq_title span {
@@ -519,6 +536,11 @@ footer {
         top: 5px;
     }
 
+    /* main view */
+    .main_view {
+        margin-bottom: 10rem;
+    }
+
     .sales_mv_list {
         flex-direction: row;
     }
@@ -527,7 +549,12 @@ footer {
         width: 49%;
     }
 
-    .lineup {
+    section.company_infomation,
+    section.concerns,
+    section.lineup,
+    section.reasons,
+    section.start_trading,
+    section.trust {
         margin-bottom: 10rem;
     }
 
@@ -538,16 +565,20 @@ footer {
 
     h2.faq_title {
         font-size: 3rem;
-        margin-left: 2em;
+        padding-left: 2em;
+        width: 100%;
+        background-position-x: 0;
     }
 
     .faq_list_item-t,
     .faq_list_item-d {
         padding: 0 5rem;
+        font-size: max(1.4vw, 1.6rem);
     }
 
     .faq_list_item-d {
         margin: .5em 0 1em 5rem;
+        font-size: 1.6rem;
     }
 
     .request {
