@@ -89,9 +89,37 @@
 
         <!-- 05. lineup -->
         <section class="lineup">
-            <object class="pc" data="./img/05_lineup.svg" alt="商品ラインナップ"></object>
-            <object class="sp" data="./img/05_lineup-sp.svg" alt="商品ラインナップ"></object>
+            <img class="pc" src="./img/05_lineup.svg" alt="商品ラインナップ">
+            <img class="sp" src="./img/05_lineup-sp.svg" alt="商品ラインナップ">
             <p class="catalog_download"><a href="">総合カタログを<br class="sp">無料ダウンロード<span>→</span></a></p>
+            <!-- <style>
+                .lineup {
+                    position: relative;
+                }
+
+                .catalog_download {
+                    width: calc-size(fit-content, size + 2em);
+                    position: absolute;
+                    bottom: -24px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+
+                .catalog_download a {
+                    width: fit-content;
+                    font-size: 3.7vw;
+                    padding: .7em 1.5em;
+                }
+
+                @media screen and (min-width: 768px) {
+                    .catalog_download a {
+                        font-size: min(2vw, 24px);
+                        padding: .8em min(1.6em, 2em);
+                        letter-spacing: 4px;
+                        border-radius: .4em;
+                    }
+                }
+            </style> -->
         </section>
 
         <!-- 06. start_trading -->
@@ -150,6 +178,7 @@
         <!-- 09. request -->
         <section class="request">
             <object class="pc" data="./img/09_request.svg" type="">サンプル貸し出しのお申し込み</object>
+            <!-- <img class="sp" src="./img/09_request-sp.svg" alt="サンプル貸し出しのお申し込み"> -->
             <object class="sp" data="./img/09_request-sp.svg" type="">サンプル貸し出しのお申し込み</object>
         </section>
     </main>
