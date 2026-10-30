@@ -51,7 +51,7 @@ a {
 
 a:hover {
     opacity: .8;
-    text-decoration: underline;
+    /* text-decoration: underline; */
 }
 
 h1,
