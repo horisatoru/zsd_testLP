@@ -255,8 +255,10 @@ header {
 .sales_mv {
     display: flex;
     gap: 2rem;
-    flex-wrap: wrap;
     justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
 }
 
 .sales_mv-btn1 a {
@@ -294,11 +296,11 @@ header {
 }
 
 .sales_mv_list {
-    width: 480px;
+    /* width: 480px; */
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     margin-left: 2rem;
 }
 
@@ -317,7 +319,7 @@ header {
 
 /* company_infomation */
 .company_infomation {
-    background-color: var(--sec_bgc);
+    /* background-color: var(--sec_bgc); */
     margin-bottom: 6rem;
 
 }
@@ -564,6 +566,14 @@ footer {
     section.start_trading,
     section.trust {
         margin-bottom: 10rem;
+    }
+
+    .sales_mv {
+        display: flex;
+        gap: 2rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: initial;
     }
 
     .catalog_download a {
