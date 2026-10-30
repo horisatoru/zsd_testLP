@@ -584,7 +584,7 @@ footer {
     .faq_list_item-t,
     .faq_list_item-d {
         padding: 0 5rem;
-        font-size: max(1.4vw, 1.6rem);
+        font-size: max(1.4vw, 1.8rem);
     }
 
     .faq_list_item-d {
