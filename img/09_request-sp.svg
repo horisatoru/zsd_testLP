@@ -113,6 +113,9 @@
 	.st97{clip-path:url(#SVGID_00000008126429378961577660000001478272112994498446_);fill:#040000;}
 	
 		.st98{clip-path:url(#SVGID_00000008126429378961577660000001478272112994498446_);fill:none;stroke:#040000;stroke-width:0.4777;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	a:hover {
+    opacity: .8;
+}
 </style>
 <pattern  x="390.835" y="0.501" width="72" height="72" patternUnits="userSpaceOnUse" id="_x31_0_lpi_10__x25__2" viewBox="72.25 -72 72 72" style="overflow:visible;">
 	<g>
