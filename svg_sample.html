@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LPSP sample Web Page</title>
-    <link rel="stylesheet" href="./style-sp.css">
+    <!-- <link rel="stylesheet" href="./style-sp.css"> -->
+    <link rel="stylesheet" href="./style-v1.css">
     <link rel="stylesheet" href="slide.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -68,7 +69,6 @@
         <!-- 02. concerns -->
         <section class="concerns">
             <h2 class="concerns_title">
-                <!-- こんなお悩み、<br><span>ありませんか？</span> -->
                 <img class="concerns_img pc" src="./img/01_PC_img.webp" alt="全進堂はフリーカメラマンの様々なお悩みに、直接お応えします">
                 <img class="concerns_img sp" src="./img/01_PC_img-sp.webp" alt="全進堂はフリーカメラマンの様々なお悩みに、直接お応えします">
 
@@ -89,14 +89,15 @@
 
         <!-- 05. lineup -->
         <section class="lineup">
-            <img class="pc" src="./img/05_lineup.svg" alt="商品ラインナップ">
-            <img class="sp" src="./img/05_lineup-sp.svg" alt="商品ラインナップ">
+            <object class="pc" data="./img/05_lineup.svg" alt="商品ラインナップ"></object>
+            <object class="sp" data="./img/05_lineup-sp.svg" alt="商品ラインナップ"></object>
+            <p class="catalog_download"><a href="">総合カタログを<br class="sp">無料ダウンロード<span>→</span></a></p>
         </section>
 
         <!-- 06. start_trading -->
         <section class="start_trading">
-            <img class="pc" src="./img/06_start_trading.svg" alt="お取引開始までの流れ">
-            <img class="sp" src="./img/06_start_trading-sp.svg" alt="お取引開始までの流れ">
+            <object class="pc" data="./img/06_start_trading.svg" type="">お取引開始までの流れ</object>
+            <object class="sp" data="./img/06_start_trading-sp.svg" type="">お取引開始までの流れ</object>
         </section>
 
         <!-- 07. trust -->
@@ -148,8 +149,7 @@
 
         <!-- 09. request -->
         <section class="request">
-            <img class="pc" src="./img/09_request.svg" alt="サンプル貸し出しのお申し込み">
-            <!-- <img class="sp" src="./img/09_request-sp.svg" alt="サンプル貸し出しのお申し込み"> -->
+            <object class="pc" data="./img/09_request.svg" type="">サンプル貸し出しのお申し込み</object>
             <object class="sp" data="./img/09_request-sp.svg" type="">サンプル貸し出しのお申し込み</object>
         </section>
     </main>
