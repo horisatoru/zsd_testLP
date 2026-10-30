@@ -79,6 +79,9 @@
 	.st71{fill:none;stroke:#000000;stroke-width:1.5719;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 	.st72{fill:none;stroke:#000000;stroke-width:1.2633;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 	.st73{fill:#C8C8C8;}
+	a:hover {
+    opacity: .8;
+}
 </style>
 <pattern  x="-88.2" y="1171.2" width="72" height="72" patternUnits="userSpaceOnUse" id="_x31_0_lpi_10__x25__2" viewBox="72.2 -72 72 72" style="overflow:visible;">
 	<g>
