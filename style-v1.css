@@ -400,8 +400,14 @@ section.lineup {
     margin-bottom: 6rem;
 }
 
+.start_trading object {
+    transform: scale(1.09);
+    margin-top: 10rem;
+}
+
+
 .trust {
-    padding: 0 2rem 3rem;
+    /* padding: 0 2rem 3rem; */
     margin-bottom: 5rem;
     position: relative;
     z-index: 0;
@@ -409,14 +415,15 @@ section.lineup {
 
 /* FAQ */
 .faq {
-    padding: 0 2rem 4rem;
+    /* padding: 0 2rem 4rem; */
+    padding: 0 0 4rem;
     margin-bottom: 6rem;
 }
 
 h2.faq_title {
     font-size: 2.6rem;
-    width: fit-content;
-    margin: 0 auto;
+    width: 100%;
+    margin: 0 auto 0 2em;
     padding: 1em 0;
     background-image: url(./img/zebra_bgp.png);
     background-position: 3.5em center;
@@ -428,8 +435,9 @@ h2.faq_title span {
 }
 
 dl.faq_list {
-    width: 95%;
+    /* width: 100%; */
     margin: 0 auto;
+    padding: 0 2em;
 }
 
 .faq_list_item-t {
@@ -563,10 +571,13 @@ footer {
         padding: .75em 1.5em;
     }
 
+    .start_trading object {
+        transform: scale(1.125);
+    }
+
     h2.faq_title {
         font-size: 3rem;
         padding-left: 2em;
-        width: 100%;
         background-position-x: 0;
     }
 
