@@ -391,8 +391,7 @@ section.lineup {
 }
 
 .catalog_download a {
-    /*width: fit-content;*/
-    width: calc-size(fit-content, size + 2em);
+    width: calc-size(fit-content, size + 4em);
     font-size: 3.5vw;
     padding: .7em 1.5em;
 }
