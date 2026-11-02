@@ -354,7 +354,7 @@ section.lineup {
 
 .catalog_download a {
     display: flex;
-    width: calc-size(fit-content, size + 2em);
+    width: calc-size(fit-content, size + 4em);
     border-radius: .5em;
     padding: .5em 2em;
     font-size: 1.8rem;
