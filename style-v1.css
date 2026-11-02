@@ -97,7 +97,7 @@ header {
     height: 45px;
     position: fixed;
     top: 1rem;
-    right: 2rem;
+    right: 4rem;
     z-index: 100;
     filter: drop-shadow(1px 1px 3px #3336);
 }
