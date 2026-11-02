@@ -362,7 +362,7 @@ section.lineup {
     color: var(--txt_main);
     filter: drop-shadow(2px 4px 6px #3336);
     line-height: 1.3;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
     margin: 0 auto 6rem;
     position: relative;
     z-index: 6;
