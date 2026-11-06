@@ -193,7 +193,8 @@ header {
 
 .main_view_list_item img {
     width: 100%;
-    display: block;
+    /* height: 100%;
+    display: block; */
 }
 
 .main_view_imgwrap {
@@ -585,7 +586,12 @@ footer {
 
     /* main view */
     .main_view {
+        /* margin-top: .7rem; */
         margin-bottom: 10rem;
+    }
+
+    .main_view_list {
+        gap: 5rem;
     }
 
     .sales_mv_list {
@@ -644,7 +650,7 @@ footer {
 
     .faq_list_item-d {
         margin: 0;
-        margin-bottom: 3px;
+        margin-bottom: 5px;
         padding-left: 11.5rem;
         font-size: 1.6rem;
         border-bottom: 2.5px dotted #dddddd;
