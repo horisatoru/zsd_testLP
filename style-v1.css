@@ -37,7 +37,7 @@ body {
 }
 
 main {
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
     overflow-x: hidden;
 }
 
@@ -86,7 +86,8 @@ header {
 
 .site_logo {
     width: fit-content;
-    margin-left: 6rem;
+    margin-left: 2rem;
+    margin-top: -.9rem;
 }
 
 .menu-trigger {
@@ -165,7 +166,7 @@ header {
 
 /* main view */
 .main_view {
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
 }
 
 .main_view_txtwrap {
@@ -197,9 +198,9 @@ header {
 
 .main_view_imgwrap {
     display: flex;
+    /* justify-content: space-around; */
     justify-content: center;
-    align-items: center;
-    gap: 1rem;
+    /* align-items: center; */
 }
 
 .main_view_list_item:nth-child(1) img {
@@ -234,7 +235,9 @@ header {
 .view_message.sp {
     font-size: 2rem;
     font-family: serif;
-    line-height: 1.5;
+    line-height: 1.3;
+    margin-left: 1.5rem;
+    margin-top: -2rem;
 }
 
 .view_message span {
@@ -242,9 +245,10 @@ header {
 }
 
 .main_view_title {
-    font-size: clamp(1.3rem, 3.2vw, 3.2rem);
+    font-size: clamp(1.8rem, 3.2vw, 3.2rem);
     color: var(--txt_process);
-    margin: 1em 0 .5em;
+    margin: 1.4rem 0 .5rem;
+    letter-spacing: 0.05rem;
 }
 
 .main_view_message {
@@ -265,13 +269,15 @@ header {
 .sales_mv-btn1 a {
     display: inline-block;
     border-radius: .5em;
-    padding: .75em 1em;
+    padding: 1.5rem 1.5rem;
     text-align: center;
     font-size: 1.8rem;
     font-weight: bold;
+    letter-spacing: 1.25px;
     background: linear-gradient(to right, #f7c318, #f4a42b);
     color: #555;
     filter: drop-shadow(2px 4px 6px #3336);
+    margin-top: 1.75rem;
 }
 
 .sales_mv-btn1 span {
@@ -280,20 +286,21 @@ header {
     border-radius: 50%;
     color: white;
     font-weight: bold;
-    padding: .1em .25em;
+    font-size: 1.6rem;
+    padding: .1rem .35rem;
 }
 
 .sales_mv-btn2 a {
     display: inline-block;
     border-radius: .5em;
-    padding: .75em 1rem;
+    padding: .75em 2.35rem;
+    letter-spacing: 1.5px;
     text-align: center;
     font-size: 1.8rem;
     font-weight: bold;
     background: linear-gradient(to right, #5d77ba, #5e9bdd, #5d77ba);
     color: white;
     filter: drop-shadow(2px 4px 6px #3336);
-    margin-right: 2rem;
 }
 
 .sales_mv_list {
@@ -302,7 +309,10 @@ header {
     flex-wrap: wrap;
     flex-direction: column;
     align-items: flex-start;
-    margin-left: 2rem;
+    margin-left: 3rem;
+    margin-top: 8px;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
 }
 
 .sales_mv_list_item {
@@ -320,14 +330,13 @@ header {
 
 /* company_infomation */
 .company_infomation {
-    /* background-color: var(--sec_bgc); */
-    margin-bottom: 6rem;
+    margin-bottom: 7rem;
 
 }
 
 /* reasons */
 section.reasons {
-    margin-bottom: 6rem;
+    margin-bottom: 5rem;
 }
 
 /* concerns */
@@ -354,14 +363,16 @@ section.lineup {
 
 .catalog_download a {
     display: flex;
+    width: 100%;
     border-radius: .5em;
-    /*padding: .5em 2em;*/
-    /*font-size: 1.8rem;*/
+    padding: .5em 2em;
+    font-size: 2.2rem;
     font-weight: bold;
     color: var(--txt_main);
     filter: drop-shadow(2px 4px 6px #3336);
     line-height: 1.3;
-    margin: 0 auto 6rem;
+    letter-spacing: 4px;
+    /* margin: 0 auto 6rem; */
     position: relative;
     z-index: 6;
     align-items: center;
@@ -369,12 +380,18 @@ section.lineup {
 }
 
 .catalog_download a span {
-    background-color: #666;
+    /* background-color: #666;
     padding: .15em .15em .15em;
     border-radius: 50%;
     color: white;
     margin-left: .5em;
-    text-align: center;
+    text-align: center; */
+    background-color: #666;
+    padding: .1rem;
+    border-radius: 50%;
+    color: white;
+    position: absolute;
+    right: 35px;
 }
 
 .lineup {
@@ -382,24 +399,32 @@ section.lineup {
 }
 
 .catalog_download {
-    
+    /* width: calc-size(fit-content, size + 2em);
     position: absolute;
     bottom: -24px;
     left: 50%;
+    transform: translateX(-50%); */
+    position: absolute;
+    bottom: 14.25rem;
+    left: 50%;
     transform: translateX(-50%);
+    width: calc-size(fit-content, size + 12.5rem);
 }
 
 .catalog_download a {
-    width: calc-size(fit-content, size + 2em);
-    font-size: 3.25vw;
-    letter-spacing: 2px;
-    padding: .7em 1.5em;
+    /* width: fit-content;
+    font-size: 3.7vw;
+    padding: .7em 1.5em; */
+    font-size: 5.5vw;
+    letter-spacing: 5px;
+    padding: 1.5rem 4rem 1.5rem;
 }
 
 /* SVG sections */
 .start_trading {
-    padding: 0 2rem;
+    padding: 0 1.5rem;
     margin-bottom: 6rem;
+    margin-top: -11.25rem;
 }
 
 .start_trading object {
@@ -410,36 +435,36 @@ section.lineup {
 
 .trust {
     /* padding: 0 2rem 3rem; */
-    margin-bottom: 5rem;
+    margin-bottom: 1.25rem;
     position: relative;
     z-index: 0;
 }
 
 /* FAQ */
 .faq {
-    /* padding: 0 2rem 4rem; */
-    padding: 0 0 4rem;
-    margin-bottom: 6rem;
+    margin-bottom: 1rem;
 }
 
 h2.faq_title {
     font-size: 2.6rem;
     width: 100%;
-    margin: 0 auto 0 2em;
-    padding: 1em 0;
+    margin: 0 auto 0 3.5rem;
+    padding: 1em 0 1.5rem;
     background-image: url(./img/zebra_bgp.png);
     background-position: 3.5em center;
     background-repeat: no-repeat;
+    letter-spacing: 0px;
 }
 
 h2.faq_title span {
-    letter-spacing: .5em;
+    letter-spacing: 13px;
+    margin-left: -10px;
 }
 
 dl.faq_list {
     /* width: 100%; */
     margin: 0 auto;
-    padding: 0 2em;
+    padding: 0 1.5rem;
 }
 
 .faq_list_item-t {
@@ -447,6 +472,7 @@ dl.faq_list {
     font-size: min(1.6rem, 1.8rem);
     font-weight: bold;
     border-top: 2.5px dotted #ccc;
+    line-height: 1.7;
 }
 
 .faq_list_item-t:first-child {
@@ -454,29 +480,33 @@ dl.faq_list {
 }
 
 .faq_list_item-d {
-    padding-bottom: .5em;
+    padding-bottom: 1rem;
     display: block;
+    font-size: 1.5rem;
+    margin-bottom: 0rem;
+    line-height: 1.7;
 }
 
 .faq_list_item-t span,
 .faq_list_item-d span {
     font-size: 140%;
+    margin-right: 0.5rem;
 }
 
 .faq_list_item-d span {
     color: var(--txt_sub);
     font-weight: bold;
-    margin-right: .25em;
+    margin-right: .2rem;
 }
 
-.faq_list_item-d:last-child {
+/* .faq_list_item-d:last-child {
     border-bottom: 2.5px dotted #999;
-}
+} */
 
 /* request */
 .request {
     background: linear-gradient(to right, #6275B4, #6B98D6, #6275B4);
-    padding: 2em 1.5em 2em;
+    /* padding: 2em 1.5em 2em; */
 }
 
 /* footer */
@@ -485,7 +515,7 @@ footer {
 }
 
 .fotter_fig {
-    padding: 2rem;
+    padding: 2.7rem 1.5rem 0;
     text-align: center;
 }
 
@@ -496,15 +526,22 @@ footer {
 
 .fotter_list_item-list.company_infomations,
 .fotter_list_item-list.company_links {
-    font-size: clamp(1.3rem, 3vw, 1.8rem);
-    line-height: 1.5;
-    margin: 1em auto 2em;
+    font-size: clamp(1.8rem, 3vw, 1.8rem);
+    line-height: 2.05;
+    margin: 1.25rem auto 2em;
+    letter-spacing: 1.8px;
 }
 
 .fotter_list_item-list.company_links {
-    line-height: 2;
+    line-height: 2.5;
     margin: 1em auto;
 }
+
+
+
+
+
+
 
 /* 768px */
 @media screen and (min-width: 768px) {
@@ -518,7 +555,7 @@ footer {
 
     body {
         width: min(100%, 1200px);
-        margin: 7rem auto 0;
+        margin: 5rem auto 0;
     }
 
     header {
@@ -555,9 +592,9 @@ footer {
         flex-direction: row;
     }
 
-    .sales_mv_list_item {
+    /* .sales_mv_list_item {
         width: 49%;
-    }
+    } */
 
     section.company_infomation,
     section.concerns,
@@ -565,7 +602,7 @@ footer {
     section.reasons,
     section.start_trading,
     section.trust {
-        margin-bottom: 10rem;
+        margin-bottom: 7.5rem;
     }
 
     .sales_mv {
@@ -574,11 +611,12 @@ footer {
         flex-wrap: wrap;
         justify-content: center;
         flex-direction: initial;
+        margin-top: 2.5rem;
     }
 
     .catalog_download a {
         font-size: 2.4rem;
-        padding: .75em 1.5em;
+        padding: 2.5rem 1.5em;
     }
 
     .start_trading object {
@@ -587,34 +625,46 @@ footer {
 
     h2.faq_title {
         font-size: 3rem;
-        padding-left: 2em;
+        padding-left: 7.5rem;
         background-position-x: 0;
+        padding-bottom: 5.25rem;
+        letter-spacing: 1px;
+    }
+
+    .faq {
+        margin-bottom: 9rem;
     }
 
     .faq_list_item-t,
     .faq_list_item-d {
-        padding: 0 5rem;
-        font-size: max(1.4vw, 1.8rem);
+        padding-left: 6.75rem;
+        font-size: 1.8rem;
+        line-height: 1.935;
     }
 
     .faq_list_item-d {
-        margin: .5em 0 1em 5rem;
+        margin: 0;
+        margin-bottom: 3px;
+        padding-left: 11.5rem;
         font-size: 1.6rem;
+        border-bottom: 2.5px dotted #dddddd;
+        line-height: 2;
     }
 
     .request {
-        padding: 2em 5rem 2em;
+        margin-bottom: 6rem;
     }
 
     footer {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: space-evenly;
         padding-bottom: 8rem;
     }
 
     .fotter_fig {
-        width: 425px;
+        width: 415px;
+        margin-top: 1.5rem;
     }
 
     .fotter_fig img {
@@ -622,31 +672,146 @@ footer {
     }
 
     ul.fotter_list_item-list.company_links {
-        display: flex;
+        /* display: flex;
         justify-content: space-evenly;
         gap: 5rem;
         column-rule: 1px solid #666;
+        column-rule-inset: .75rem; */
+        display: flex;
+        gap: 6rem;
+        column-rule: 1px solid #666;
         column-rule-inset: .75rem;
+        margin-top: 2.5rem;
+        letter-spacing: 2px;
+        margin-left: 156px;
     }
 
     ul.fotter_list {
         width: 49%;
+        padding-left: 2.5rem;
     }
 
     li.fotter_list_item-list_item {
         margin-bottom: .5em;
-        font-size: min(1.8rem, 1.8vw);
+        font-size: min(1.875rem, 1.8vw);
     }
 
     .fotter_list_item-list.company_infomations {
         font-size: 1.9rem;
+        letter-spacing: 3px;
+        line-height: 1.8;
+        margin-bottom: 0;
+        margin-top: 17px;
     }
 
     /* --------------- */
-    .catalog_download a {
+    /* .catalog_download a {
         font-size: min(2vw, 24px);
         padding: .8em min(1.6em, 2em);
         letter-spacing: 4px;
         border-radius: .4em;
+    } */
+    .catalog_download a span {
+        right: 3.5rem;
     }
+
+    /* = = = = = = = = = = = = = =  */
+    .main_view_list_item:nth-child(2) {
+        margin-top: 10rem;
+    }
+
+    .main_view_list_item:nth-child(2), .main_view_list_item:nth-child(4) {
+        font-size: 2rem;
+        letter-spacing: 3.3px;
+    }
+
+    .main_view_list_item:nth-child(4) {
+        margin-top: 2rem;
+    }
+
+    .main_view_txtwrap {
+        padding: 0 9rem;
+    }
+
+    .main_view_title {
+        margin-bottom: 1rem;
+        letter-spacing: 5.5px;
+    }
+
+    .main_view_imgwrap {
+        /* --------------- */
+        height: 390px;
+    }
+
+    .sales_mv_list {
+        width: 450px;
+        padding-left: 2rem;
+        gap: 1px 60px;
+    }
+
+    .concerns_img {
+        width: 92%;
+        margin: -12px auto;
+    }
+
+    .sales_mv-btn1 a {
+        margin-top: 0;
+    }
+
+    section.reasons {
+        width: 92%;
+        padding: 1.5rem 0;
+        margin: 0 auto 7.5rem;
+    }
+
+    section.lineup {
+        width: 92%;
+        margin: 0 auto 1rem;
+    }
+
+    .catalog_download {
+        bottom: 3.8rem;
+        width: calc-size(fit-content, size + 3.5rem);
+    }
+
+    section.concerns {
+
+        margin: 0 auto 6.5rem;
+    }
+
+    section.company_infomation {
+        width: 92%;
+        padding-top: 1.5rem;
+        margin: 0 auto 8rem;
+    }
+
+    section.start_trading {
+        width: 92%;
+        padding-top: 1.5rem;
+        margin: 0 auto 13rem;
+    }
+
+    section.trust {
+        width: 92%;
+        padding-top: 1.5rem;
+        margin: 0 auto 9rem;
+    }
+
+    h2.faq_title span {
+        letter-spacing: 15px;
+    }
+
+    dl.faq_list {
+        padding: 0;
+    }
+
+    dl.faq_list {
+        margin: 0 auto 0 4.5rem;
+    }
+
+    .faq_list_item-t span, .faq_list_item-d span {
+        margin-right: 0px;
+        font-size: 160%;
+    }
+
 }
