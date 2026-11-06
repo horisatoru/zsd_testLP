@@ -575,6 +575,10 @@ footer {
         position: relative;
     }
 
+    .site_logo {
+        margin-left: 6.5rem;
+    }
+
     .menu-trigger {
         width: 70px;
         height: 70px;
@@ -582,6 +586,7 @@ footer {
         filter: none;
         position: absolute;
         top: 5px;
+        right: 4.5rem;
     }
 
     /* main view */
