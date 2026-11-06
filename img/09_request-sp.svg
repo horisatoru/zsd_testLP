@@ -252830,13 +252830,13 @@ gyJRiUjn9XDta6YjGslIXCBRiTnMfd1IQEIIIYQQQgghhGD8Pw6owBEFV4JkAAAAAElFTkSuQmCC" tr
 					<stop  offset="0" style="stop-color:#F7C317"/>
 					<stop  offset="1" style="stop-color:#F5A32D"/>
 				</linearGradient>
-				<a href="yahoo.co.jp">
+				<a xlink:href="#">
 				<circle style="fill:url(#SVGID_00000174566365149048125180000002926891563039096973_);" cx="194.474" cy="631.52" r="135.531"/>
 			</a>
 			</g>
 
 		</g>
-<a href="yahoo.co.jp">
+<a xlink:href="#">
 		<g>
 			<circle class="st6" cx="194.474" cy="716.41" r="18.208"/>
 			<path class="st5" d="M197.401,711.474l2.362-1.312c1.811,2.31,4.489,4.698,6.852,6.247c-2.363,1.549-5.04,3.937-6.852,6.247
