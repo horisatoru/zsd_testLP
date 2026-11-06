@@ -471,7 +471,7 @@ dl.faq_list {
     color: var(--txt_process);
     font-size: min(1.6rem, 1.8rem);
     font-weight: bold;
-    border-top: 2.5px dotted #ccc;
+    /* border-top: 2.5px dotted #ccc; */
     line-height: 1.7;
 }
 
