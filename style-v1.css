@@ -362,7 +362,7 @@ section.lineup {
     margin: 0 auto 6rem;
 }
 
-.catalog_downloa {
+.catalog_download {
     width: calc-size(fit-content, size + 12.5rem);
 }
 
@@ -371,7 +371,7 @@ section.lineup {
     width: 100%;
     border-radius: .5em;
     padding: .5em 2em;
-    font-size: 2.2rem;
+    font-size: min(1.7vw, 2.2rem);
     font-weight: bold;
     color: var(--txt_main);
     filter: drop-shadow(2px 4px 6px #3336);
@@ -410,18 +410,15 @@ section.lineup {
     left: 50%;
     transform: translateX(-50%); */
     position: absolute;
-    bottom: 14.25rem;
+    bottom: 8rem;
     left: 50%;
     transform: translateX(-50%);
-    width: min(90%, 520px);
+    width: min(80%, 520px);
     /* width: calc-size(fit-content, size + 12.5rem); */
 }
 
 .catalog_download a {
-    /* width: fit-content;
-    font-size: 3.7vw;
-    padding: .7em 1.5em; */
-    font-size: 5.5vw;
+    font-size: 4.5vw;
     letter-spacing: 5px;
     padding: 1.5rem 4rem 1.5rem;
 }
@@ -632,7 +629,7 @@ footer {
     }
 
     .catalog_download a {
-        font-size: min(1.8vw, 2.4rem);
+        font-size: min(1.6vw, 1.8rem);
         padding: 2.5rem 1.5em;
     }
 
@@ -831,4 +828,38 @@ footer {
         font-size: 160%;
     }
 
+}
+
+
+/* lineup with gemini */
+/* .lineup {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.lineup img {
+    width: 100%;
+    height: auto;
+    display: block;
+} */
+
+.catalog_download {
+    position: absolute;
+    bottom: 5%;
+    /* 画像の下からの位置（%指定でレスポンシブに追従） */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 450px;
+    margin: 0;
+    z-index: 2;
+}
+
+@media screen and (max-width: 768px) {
+    .catalog_download {
+        bottom: 5%;
+        /* SP画像デザインに合わせて位置を再調整 */
+        max-width: 300px;
+    }
 }
