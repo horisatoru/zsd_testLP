@@ -627,7 +627,7 @@ footer {
     }
 
     .catalog_download a {
-        font-size: 2.4rem;
+        font-size: min(1.8vw, 2.4rem);
         padding: 2.5rem 1.5em;
     }
 
