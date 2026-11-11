@@ -385,18 +385,12 @@ section.lineup {
 }
 
 .catalog_download a span {
-    /* background-color: #666;
-    padding: .15em .15em .15em;
-    border-radius: 50%;
-    color: white;
-    margin-left: .5em;
-    text-align: center; */
     background-color: #666;
     padding: .1rem;
     border-radius: 50%;
     color: white;
     position: absolute;
-    right: 35px;
+    right: 3rem;
 }
 
 .lineup {
@@ -420,7 +414,7 @@ section.lineup {
 .catalog_download a {
     font-size: 4.5vw;
     letter-spacing: 5px;
-    padding: 1.5rem 4rem 1.5rem;
+    padding: 1.5rem 3rem 1.5rem;
 }
 
 /* SVG sections */
@@ -850,7 +844,7 @@ footer {
     /* 画像の下からの位置（%指定でレスポンシブに追従） */
     left: 50%;
     transform: translateX(-50%);
-    width: 90%;
+    width: 75%;
     max-width: 450px;
     margin: 0;
     z-index: 2;
@@ -858,8 +852,7 @@ footer {
 
 @media screen and (max-width: 768px) {
     .catalog_download {
-        bottom: 5%;
-        /* SP画像デザインに合わせて位置を再調整 */
+        bottom: 6.5%;
         max-width: 420px;
     }
 }
