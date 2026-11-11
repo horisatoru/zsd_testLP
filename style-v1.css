@@ -362,6 +362,10 @@ section.lineup {
     margin: 0 auto 6rem;
 }
 
+.catalog_downloa {
+    width: calc-size(fit-content, size + 12.5rem);
+}
+
 .catalog_download a {
     display: flex;
     width: 100%;
@@ -409,7 +413,8 @@ section.lineup {
     bottom: 14.25rem;
     left: 50%;
     transform: translateX(-50%);
-    width: calc-size(fit-content, size + 12.5rem);
+    width: min(90%, 520px);
+    /* width: calc-size(fit-content, size + 12.5rem); */
 }
 
 .catalog_download a {
