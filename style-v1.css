@@ -860,6 +860,6 @@ footer {
     .catalog_download {
         bottom: 5%;
         /* SP画像デザインに合わせて位置を再調整 */
-        max-width: 300px;
+        max-width: 420px;
     }
 }
