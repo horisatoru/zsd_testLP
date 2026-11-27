@@ -5,14 +5,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LPSP sample Web Page</title>
-    <!-- <link rel="stylesheet" href="./style-sp.css"> -->
-    <link rel="stylesheet" href="./style-v1.css">
-    <link rel="stylesheet" href="slide.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <!-- description -->
+    <meta name="description" content="フォトアルバム、写真台紙を作成なら全進堂にお任せ下さい。フットワーク軽く全国各地に伺い、お客様のご要望に合った商品をご提案いたします。">
+    <!-- OG image -->
+    <meta property="og:image"
+        content="https://zenshindo.net/zd/wp-content/themes/zenshindo/assets/images/common/og.png" />
+    <meta property="og:image:secure_url"
+        content="https://zenshindo.net/zd/wp-content/themes/zenshindo/assets/images/common/og.png" />
+    <meta name="twitter:image"
+        content="https://zenshindo.net/zd/wp-content/themes/zenshindo/assets/images/common/og.png" />
+
+    <!-- canonical -->
+    <link rel="canonical" href="https://zenshindo.net/contact/">
+
+    <link rel="icon" href="https://zenshindo.net/zd/wp-content/uploads/2020/04/cropped-favicon-2-32x32.png"
+        sizes="32x32" />
+    <link rel="icon" href="https://zenshindo.net/zd/wp-content/uploads/2020/04/cropped-favicon-2-192x192.png"
+        sizes="192x192" />
+    <link rel="apple-touch-icon-precomposed"
+        href="https://zenshindo.net/zd/wp-content/uploads/2020/04/cropped-favicon-2-180x180.png" />
+    <meta name="msapplication-TileImage"
+        content="https://zenshindo.net/zd/wp-content/uploads/2020/04/cropped-favicon-2-270x270.png" />
+    <link rel="stylesheet" href="style-v1.css">
+    <link rel="stylesheet" href="slide.css">
+    <!-- GA
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-18819178-1', 'auto');
+        ga('send', 'pageview');
+    </script> -->
+    <!-- Google tag (gtag.js)
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D9RCGRMW41"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-D9RCGRMW41');
+    </script>
+     -->
 </head>
+
 <body>
     <header>
         <div class="header_top">
@@ -42,18 +90,18 @@
             <div class="main_view_imgwrap">
                 <ul class="main_view_list img-frame">
                     <li class="main_view_list_item img-01">
-                        <img class="pc" src="./img/01_top_img.webp" alt="七五三写真"fetchpriority=high >
-                        <img class="sp" src="./img/01_top_img-sp.webp" alt="七五三写真" fetchpriority=high>
+                        <img class="pc" src="./img/01_top_img.webp" alt="七五三写真">
+                        <img class="sp" src="./img/01_top_img-sp.webp" alt="七五三写真">
                     </li>
                     <li class="main_view_list_item txt-rl pc">もっと価値ある作品に</li>
                     <li class="main_view_list_item img-02">
-                        <img class="pc" src="./img/02_top_img.webp" alt="ブライダル" fetchpriority=high >
-                        <img class="sp" src="./img/02_top_img-sp.webp" alt="ブライダル" fetchpriority=high >
+                        <img class="pc" src="./img/02_top_img.webp" alt="ブライダル">
+                        <img class="sp" src="./img/02_top_img-sp.webp" alt="ブライダル">
                     </li>
                     <li class="main_view_list_item txt-rl pc">撮った写真を</li>
                     <li class="main_view_list_item img-03">
-                        <img class="pc" src="./img/03_top_img.webp" alt="家族記念写" fetchpriority=high >
-                        <img class="sp" src="./img/03_top_img-sp.webp" alt="家族記念写" fetchpriority=high >
+                        <img class="pc" src="./img/03_top_img.webp" alt="家族記念写">
+                        <img class="sp" src="./img/03_top_img-sp.webp" alt="家族記念写">
                     </li>
                 </ul>
                 <p class="view_message sp">撮った写真を<br><span>もっと価値ある作品に</span></p>
@@ -64,8 +112,9 @@
                 <p class="main_view_message">ブライダル・七五三・家族記念撮影を手掛ける<br
                         class="sp">フリーランスカメラマンのために。<br>小ロット・別注対応・担当者による訪問サポートで、納品価格を一段上へ。</p>
                 <div class="sales_mv">
-                    <p class="sales_mv-btn1"><a href="#">サンプルを無料で借りてみる<span>→</span></a></p>
-                    <p class="sales_mv-btn2"><a href="#">まずは相談する</a></p>
+                    <p class="sales_mv-btn1"><a href="https://zenshindo.net/contact/">サンプルを無料で借りてみる<span>→</span></a>
+                    </p>
+                    <p class="sales_mv-btn2"><a href="https://zenshindo.net/contact/">まずは相談する</a></p>
                     <ul class="sales_mv_list">
                         <li class="sales_mv_list_item">サンプル貸し出し無料</li>
                         <li class="sales_mv_list_item">営業電話一切なし</li>
@@ -100,7 +149,8 @@
         <section class="lineup">
             <img class="pc" src="./img/05_lineup.svg" alt="商品ラインナップ">
             <img class="sp" src="./img/05_lineup-sp.svg" alt="商品ラインナップ">
-            <p class="catalog_download"><a href="">総合カタログを<br class="sp">無料ダウンロード<span>→</span></a></p>
+            <p class="catalog_download"><a href="https://zenshindo.net/documents/197/">総合カタログを<br
+                        class="sp">無料ダウンロード<span>→</span></a></p>
         </section>
 
         <!-- 06. start_trading -->
@@ -178,22 +228,20 @@
             </li>
             <li class="fotter_list_item sp">
                 <ul class="fotter_list_item-list company_links">
-                    <li class="fotter_list_item-list_item"><a href="">個人情報保護方針</a></li>
+                    <li class="fotter_list_item-list_item"><a href="https://zenshindo.net/privacy/">個人情報保護方針</a></li>
                     <li class="fotter_list_item-list_item"><a href="https://www.zenshindo.net/">公式HPへ（zenshindo.net）</a>
                     </li>
-                    <li class="fotter_list_item-list_item"><a href="">ECサイト（写真アルバム工房）へ</a></li>
+                    <li class="fotter_list_item-list_item"><a href="https://shashin-album.jp/">ECサイト（写真アルバム工房）へ</a></li>
                 </ul>
             </li>
         </ul>
         <ul class="fotter_list_item-list company_links pc">
-            <li class="fotter_list_item-list_item"><a href="">個人情報保護方針</a></li>
-            <li class="fotter_list_item-list_item"><a href="https://www.zenshindo.net/">公式HPへ(zenshindo.net)</a>
+            <li class="fotter_list_item-list_item"><a href="https://zenshindo.net/privacy/">個人情報保護方針</a></li>
+            <li class="fotter_list_item-list_item"><a href="https://www.zenshindo.net/">公式HPへ（zenshindo.net）</a>
             </li>
-            <li class="fotter_list_item-list_item"><a href="">ECサイト(写真アルバム工房）へ</a></li>
+            <li class="fotter_list_item-list_item"><a href="https://shashin-album.jp/">ECサイト（写真アルバム工房）へ</a></li>
         </ul>
     </footer>
-
-
 
     <script>
         // JavaScriptでボタンのクリックイベントを制御
@@ -217,4 +265,5 @@
         });
     </script>
 </body>
+
 </html>
