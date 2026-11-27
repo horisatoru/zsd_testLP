@@ -37,6 +37,7 @@ body {
 }
 
 main {
+    /* margin-top: 2rem; */
     overflow-x: hidden;
 }
 
@@ -51,6 +52,7 @@ a {
 
 a:hover {
     opacity: .8;
+    /* text-decoration: underline; */
 }
 
 h1,
@@ -191,11 +193,15 @@ header {
 
 .main_view_list_item img {
     width: 100%;
+    /* height: 100%;
+    display: block; */
 }
 
 .main_view_imgwrap {
     display: flex;
+    /* justify-content: space-around; */
     justify-content: center;
+    /* align-items: center; */
 }
 
 .main_view_list_item:nth-child(1) img {
@@ -208,6 +214,10 @@ header {
 
 .main_view_list_item:nth-child(5) img {
     border-radius: 16px 16px 0 16px;
+}
+
+.main_view_list_item.txt-rl {
+    writing-mode: vertical-rl;
 }
 
 .main_view_list_item:nth-child(2),
@@ -295,6 +305,7 @@ header {
 }
 
 .sales_mv_list {
+    /* width: 480px; */
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -321,6 +332,7 @@ header {
 /* company_infomation */
 .company_infomation {
     margin-bottom: 7rem;
+
 }
 
 /* reasons */
@@ -345,33 +357,27 @@ h2.concerns_title {
 }
 
 /* lineup */
-section.lineup,
-.lineup {
-    position: relative;
+section.lineup {
     width: 100%;
     margin: 0 auto 6rem;
 }
 
 .catalog_download {
-    position: absolute;
-    bottom: 8rem;
-    left: 50%;
-    transform: translateX(-50%);
-    width: min(80%, 520px);
-    z-index: 2;
+    width: calc-size(fit-content, size + 12.5rem);
 }
 
 .catalog_download a {
     display: flex;
     width: 100%;
     border-radius: .5em;
-    padding: 1.5rem 3rem 1.5rem;
-    font-size: 4.5vw;
+    padding: .5em 2em;
+    font-size: min(1.7vw, 2.2rem);
     font-weight: bold;
     color: var(--txt_main);
     filter: drop-shadow(2px 4px 6px #3336);
     line-height: 1.3;
-    letter-spacing: 5px;
+    letter-spacing: 4px;
+    /* margin: 0 auto 6rem; */
     position: relative;
     z-index: 6;
     align-items: center;
@@ -387,6 +393,30 @@ section.lineup,
     right: 3rem;
 }
 
+.lineup {
+    position: relative;
+}
+
+.catalog_download {
+    /* width: calc-size(fit-content, size + 2em);
+    position: absolute;
+    bottom: -24px;
+    left: 50%;
+    transform: translateX(-50%); */
+    position: absolute;
+    bottom: 8rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: min(80%, 520px);
+    /* width: calc-size(fit-content, size + 12.5rem); */
+}
+
+.catalog_download a {
+    font-size: 4.5vw;
+    letter-spacing: 5px;
+    padding: 1.5rem 3rem 1.5rem;
+}
+
 /* SVG sections */
 .start_trading {
     padding: 0 1.5rem;
@@ -399,7 +429,9 @@ section.lineup,
     margin-top: 10rem;
 }
 
+
 .trust {
+    /* padding: 0 2rem 3rem; */
     margin-bottom: 1.25rem;
     position: relative;
     z-index: 0;
@@ -427,6 +459,7 @@ h2.faq_title span {
 }
 
 dl.faq_list {
+    /* width: 100%; */
     margin: 0 auto;
     padding: 0 1.5rem;
 }
@@ -435,6 +468,7 @@ dl.faq_list {
     color: var(--txt_process);
     font-size: min(1.6rem, 1.8rem);
     font-weight: bold;
+    /* border-top: 2.5px dotted #ccc; */
     line-height: 1.7;
 }
 
@@ -462,9 +496,14 @@ dl.faq_list {
     margin-right: .2rem;
 }
 
+/* .faq_list_item-d:last-child {
+    border-bottom: 2.5px dotted #999;
+} */
+
 /* request */
 .request {
     background: linear-gradient(to right, #6275B4, #6B98D6, #6275B4);
+    /* padding: 2em 1.5em 2em; */
 }
 
 /* footer */
@@ -494,6 +533,12 @@ footer {
     line-height: 2.5;
     margin: 1em auto;
 }
+
+
+
+
+
+
 
 /* 768px */
 @media screen and (min-width: 768px) {
@@ -553,10 +598,11 @@ footer {
 
     .sales_mv_list {
         flex-direction: row;
-        width: 450px;
-        padding-left: 2rem;
-        gap: 1px 60px;
     }
+
+    /* .sales_mv_list_item {
+        width: 49%;
+    } */
 
     section.company_infomation,
     section.concerns,
@@ -634,6 +680,11 @@ footer {
     }
 
     ul.fotter_list_item-list.company_links {
+        /* display: flex;
+        justify-content: space-evenly;
+        gap: 5rem;
+        column-rule: 1px solid #666;
+        column-rule-inset: .75rem; */
         display: flex;
         gap: 6rem;
         column-rule: 1px solid #666;
@@ -661,16 +712,23 @@ footer {
         margin-top: 17px;
     }
 
+    /* --------------- */
+    /* .catalog_download a {
+        font-size: min(2vw, 24px);
+        padding: .8em min(1.6em, 2em);
+        letter-spacing: 4px;
+        border-radius: .4em;
+    } */
     .catalog_download a span {
         right: 3.5rem;
     }
 
+    /* = = = = = = = = = = = = = =  */
     .main_view_list_item:nth-child(2) {
         margin-top: 10rem;
     }
 
-    .main_view_list_item:nth-child(2),
-    .main_view_list_item:nth-child(4) {
+    .main_view_list_item:nth-child(2), .main_view_list_item:nth-child(4) {
         font-size: 2rem;
         letter-spacing: 3.3px;
     }
@@ -689,7 +747,14 @@ footer {
     }
 
     .main_view_imgwrap {
+        /* --------------- */
         height: 390px;
+    }
+
+    .sales_mv_list {
+        width: 450px;
+        padding-left: 2rem;
+        gap: 1px 60px;
     }
 
     .concerns_img {
@@ -718,6 +783,7 @@ footer {
     }
 
     section.concerns {
+
         margin: 0 auto 6.5rem;
     }
 
@@ -745,14 +811,43 @@ footer {
 
     dl.faq_list {
         padding: 0;
+    }
+
+    dl.faq_list {
         margin: 0 auto 0 4.5rem;
     }
 
-    .faq_list_item-t span,
-    .faq_list_item-d span {
+    .faq_list_item-t span, .faq_list_item-d span {
         margin-right: 0px;
         font-size: 160%;
     }
+
+}
+
+
+/* lineup with gemini */
+/* .lineup {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.lineup img {
+    width: 100%;
+    height: auto;
+    display: block;
+} */
+
+.catalog_download {
+    position: absolute;
+    bottom: 5%;
+    /* 画像の下からの位置（%指定でレスポンシブに追従） */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 75%;
+    max-width: 450px;
+    margin: 0;
+    z-index: 2;
 }
 
 @media screen and (max-width: 768px) {
